@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mente Regenerada</title>
+<meta name="description" content="Um guia completo para superar a exaustão mental, restaurar o foco e recuperar o equilíbrio emocional através de técnicas validadas de mindfulness e regeneração cognitiva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          background: '#0f0a1a',
+          foreground: '#f5f2ee',
+          'purple-deep': '#170f28',
+          'purple-mid': '#2c1e4a',
+          'purple-light': '#5b3d8f',
+          gold: '#d4af5a',
+          'gold-light': '#e6c674',
+          card: '#1c1330',
+          border: '#3a2b58',
+          accent: '#2c1e4a',
+          'muted-foreground': '#a89cc0',
+        },
+        fontFamily: {
+          heading: ['"Playfair Display"', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        keyframes: {
+          'glow-pulse': {
+            '0%, 100%': { opacity: 0.6 },
+            '50%': { opacity: 1 },
+          }
+        },
+        animation: {
+          'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #0f0a1a; }
+  .star { color: #d4af5a; fill: #d4af5a; }
+  .accordion-item.active { background-color: rgba(212,175,90,0.1); border-color: rgba(212,175,90,0.3); }
+</style>
+</head>
+<body class="bg-background text-foreground font-body">
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-purple-deep via-purple-mid/60 to-background"></div>
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-light/20 rounded-full blur-3xl animate-glow-pulse"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-glow-pulse" style="animation-delay:2s;"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <div class="flex-1 text-center lg:text-left">
+      <div class="inline-block mb-6 px-4 py-1.5 border border-gold/30 rounded-full">
+        <span class="text-gold text-sm tracking-widest uppercase">E-book Exclusivo</span>
+      </div>
+      <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-8">
+        <span class="text-gold">Mente</span><br><span class="text-foreground">Regenerada</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-foreground/70 font-light max-w-lg mx-auto lg:mx-0 leading-relaxed mb-10">
+        Aprenda a recuperar sua energia mental sem depender de remédios ou soluções complicadas.
+      </p>
+      <a href="#comprar" class="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-purple-deep font-semibold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 shadow-[0_0_32px_8px_rgba(120,60,200,0.35)]">
+        Quero Me Recuperar
+      </a>
+      <p class="mt-4 text-sm text-muted-foreground">Acesso imediato após a compra</p>
+    </div>
+    <div class="flex-1 flex justify-center lg:justify-end">
+      <div class="relative">
+        <div class="absolute -inset-12 bg-purple-light/40 rounded-3xl blur-3xl animate-glow-pulse"></div>
+        <img src="images/capa-ebook.jpg" alt="Mente Regenerada - Ebook sobre exaustão mental" class="relative w-72 sm:w-80 lg:w-96 rounded-2xl shadow-2xl shadow-purple-deep/50">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-purple-deep/40 to-background"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <span class="text-gold/80 text-sm tracking-widest uppercase">Você se identifica?</span>
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+        A <span class="text-gold italic">exaustão mental</span> rouba<br class="hidden sm:block"> sua vida aos poucos
+      </h2>
+      <div class="w-20 h-[1px] bg-gold/40 mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative order-2 lg:order-1">
+        <img src="images/identificacao.png" alt="Representação da exaustão mental" class="relative w-full rounded-2xl shadow-xl">
+      </div>
+      <div class="order-1 lg:order-2 space-y-8">
+        <div class="flex gap-5 p-6 rounded-2xl border border-border/50 bg-card/50 hover:border-gold/30 transition-all duration-500">
+          <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center text-gold text-2xl">🧠</div>
+          <div>
+            <h3 class="font-heading text-xl font-semibold mb-2">Pensamentos que não param</h3>
+            <p class="text-muted-foreground leading-relaxed text-[15px]">Sua mente está sempre acelerada, mesmo quando o corpo pede descanso. Você não consegue desligar.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-border/50 bg-card/50 hover:border-gold/30 transition-all duration-500">
+          <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center text-gold text-2xl">🔋</div>
+          <div>
+            <h3 class="font-heading text-xl font-semibold mb-2">Energia esgotada</h3>
+            <p class="text-muted-foreground leading-relaxed text-[15px]">Acordar já cansado se tornou rotina. A produtividade caiu e tudo parece exigir um esforço enorme.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-border/50 bg-card/50 hover:border-gold/30 transition-all duration-500">
+          <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center text-gold text-2xl">🌙</div>
+          <div>
+            <h3 class="font-heading text-xl font-semibold mb-2">Noites sem descanso</h3>
+            <p class="text-muted-foreground leading-relaxed text-[15px]">O sono não vem, ou quando vem, não é reparador. Você acorda mais exausto do que dormiu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMAÇÃO -->
+<section class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-accent/20 to-background"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <span class="text-gold/80 text-sm tracking-widest uppercase">A Transformação</span>
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+        Existe um caminho para<br class="hidden sm:block"><span class="text-gold italic">regenerar sua mente</span>
+      </h2>
+      <div class="w-20 h-[1px] bg-gold/40 mx-auto mb-8"></div>
+      <p class="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+        O ebook "Mente Regenerada" é um guia completo que vai te ajudar a entender a raiz da exaustão e te dar ferramentas reais para superá-la.
+      </p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/30 hover:bg-card/50 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold">✨</div>
+          <h3 class="font-heading text-lg font-semibold mb-2">Clareza Mental</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed">Técnicas práticas para silenciar o ruído interno e encontrar foco verdadeiro.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/30 hover:bg-card/50 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold">💛</div>
+          <h3 class="font-heading text-lg font-semibold mb-2">Energia Restaurada</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed">Métodos comprovados para recuperar sua vitalidade e disposição natural.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/30 hover:bg-card/50 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold">📖</div>
+          <h3 class="font-heading text-lg font-semibold mb-2">Conhecimento Acessível</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed">Linguagem simples e direta, sem termos complicados. Aplicável desde o primeiro dia.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/30 hover:bg-card/50 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold">🛡️</div>
+          <h3 class="font-heading text-lg font-semibold mb-2">Autonomia Emocional</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed">Aprenda a se regenerar sozinho, sem depender de remédios ou terapias caras.</p>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="images/transformacao.png" alt="Representação de clareza mental" class="relative w-full rounded-2xl shadow-xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO / ACCORDION -->
+<section class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-purple-deep/30 to-background"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <span class="text-gold/80 text-sm tracking-widest uppercase">O que você vai aprender</span>
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">Dentro do <span class="text-gold italic">Mente Regenerada</span></h2>
+      <div class="w-20 h-[1px] bg-gold/40 mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-8">
+      <div class="lg:col-span-2 space-y-2" id="accordion-list"></div>
+      <div class="lg:col-span-3 flex items-center">
+        <div class="w-full p-8 sm:p-12 rounded-2xl border border-border/50 bg-card/30" id="accordion-detail">
+          <span class="text-gold font-heading text-6xl sm:text-7xl font-bold opacity-20" id="detail-num">01</span>
+          <h3 class="font-heading text-2xl sm:text-3xl font-bold mt-4 mb-6" id="detail-title">O que é Exaustão Mental?</h3>
+          <p class="text-muted-foreground text-base sm:text-lg leading-relaxed" id="detail-desc">Entenda o que realmente acontece no seu cérebro quando a exaustão se instala — e por que simplesmente 'descansar' não é suficiente.</p>
+          <div class="mt-8 w-full h-[1px] bg-gradient-to-r from-gold/30 via-gold/10 to-transparent"></div>
+          <p class="mt-4 text-sm text-gold/60">Capítulo <span id="detail-chapnum">1</span> de 6</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-accent/10 to-background"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <span class="text-gold/80 text-sm tracking-widest uppercase">Depoimentos Reais</span>
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">Quem já <span class="text-gold italic">transformou</span> sua mente</h2>
+      <div class="w-20 h-[1px] bg-gold/40 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="relative p-8 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/20 transition-all duration-500">
+        <div class="text-gold/20 text-4xl mb-4">"</div>
+        <p class="text-foreground/80 text-[15px] leading-relaxed mb-6">"Eu estava no limite, sem conseguir dormir direito há meses. O ebook me mostrou que pequenas mudanças na rotina poderiam fazer toda a diferença. Em duas semanas já sentia minha energia voltando."</p>
+        <div class="flex gap-1 mb-3 text-gold">★★★★★</div>
+        <p class="font-heading font-semibold text-foreground">Camila R.</p>
+      </div>
+      <div class="relative p-8 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/20 transition-all duration-500">
+        <div class="text-gold/20 text-4xl mb-4">"</div>
+        <p class="text-foreground/80 text-[15px] leading-relaxed mb-6">"Achei que era frescura minha, mas quando li sobre os sinais da exaustão mental, percebi que precisava agir. O conteúdo é direto e muito prático. Recomendo demais."</p>
+        <div class="flex gap-1 mb-3 text-gold">★★★★★</div>
+        <p class="font-heading font-semibold text-foreground">Marcos A.</p>
+      </div>
+      <div class="relative p-8 rounded-2xl border border-border/50 bg-card/30 hover:border-gold/20 transition-all duration-500">
+        <div class="text-gold/20 text-4xl mb-4">"</div>
+        <p class="text-foreground/80 text-[15px] leading-relaxed mb-6">"O capítulo sobre recarga mental mudou minha vida. As técnicas são simples, mas o efeito é impressionante. Minha concentração e disposição melhoraram muito."</p>
+        <div class="flex gap-1 mb-3 text-gold">★★★★★</div>
+        <p class="font-heading font-semibold text-foreground">Juliana S.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA 1 -->
+<section id="comprar" class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-purple-deep/50 to-background"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="flex justify-center">
+        <img src="images/oferta-simples.png" alt="Ebook Mente Regenerada" class="relative w-64 sm:w-80 rounded-2xl shadow-2xl">
+      </div>
+      <div class="text-center lg:text-left">
+        <span class="text-gold/80 text-sm tracking-widest uppercase">Oferta Especial</span>
+        <h2 class="font-heading text-4xl sm:text-5xl font-bold mt-4 mb-4">Comece sua <span class="text-gold italic">regeneração</span> hoje</h2>
+        <p class="text-muted-foreground text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">Invista em você. Por menos do que um café por dia, tenha acesso ao guia completo para recuperar sua energia mental.</p>
+        <div class="mb-8">
+          <div class="flex items-baseline gap-3 justify-center lg:justify-start">
+            <span class="text-muted-foreground line-through text-lg">R$ 97,00</span>
+            <span class="text-gold font-heading text-5xl sm:text-6xl font-bold">R$ 37</span>
+            <span class="text-gold/70 text-xl">,90</span>
+          </div>
+          <p class="text-muted-foreground text-sm mt-2">Pagamento único • Sem mensalidades</p>
+        </div>
+        <button class="w-full sm:w-auto bg-gold hover:bg-gold-light text-purple-deep font-bold text-lg px-14 py-5 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-gold/20 shadow-[0_0_32px_8px_rgba(120,60,200,0.35)]">Quero Me Recuperar</button>
+        <div class="flex flex-wrap gap-6 mt-8 justify-center lg:justify-start text-muted-foreground text-sm">
+          <div class="flex items-center gap-2">🛡️ Garantia de 7 dias</div>
+          <div class="flex items-center gap-2">⚡ Acesso imediato</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACOTE COMPLETO -->
+<section class="relative py-28 sm:py-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-purple-deep/50 to-background"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold/5 rounded-full blur-3xl"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="text-gold/80 text-sm tracking-widest uppercase">Oferta Especial</span>
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-4">O <span class="text-gold italic">Pacote Completo</span></h2>
+      <p class="text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">Tudo que você precisa para regenerar sua mente — reunido em um único kit transformador.</p>
+      <div class="w-20 h-[1px] bg-gold/40 mx-auto mt-6"></div>
+    </div>
+    <div class="flex justify-center mb-14">
+      <img src="images/pacote-completo.jpg" alt="Pacote Completo Mente Regenerada" class="relative w-64 sm:w-80 rounded-2xl shadow-2xl shadow-purple-deep/60">
+    </div>
+    <div class="rounded-3xl border border-gold/30 bg-card/30 overflow-hidden">
+      <div class="bg-gold text-purple-deep text-center py-3 px-6 font-semibold text-sm tracking-wide">✦ KIT MENTE REGENERADA — EDIÇÃO COMPLETA ✦</div>
+      <div class="p-8 sm:p-12">
+        <h3 class="font-heading text-xl font-semibold mb-6 text-center text-foreground/80">O que está incluído:</h3>
+        <div class="space-y-4 mb-10">
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-border/40 bg-background/30 hover:border-gold/20 transition-all duration-300">
+            <div><p class="font-semibold text-foreground text-[15px]">Ebook Mente Regenerada</p><p class="text-sm text-muted-foreground">O guia completo sobre exaustão mental</p></div>
+            <span class="ml-auto text-gold/50">✓</span>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-border/40 bg-background/30 hover:border-gold/20 transition-all duration-300">
+            <div><p class="font-semibold text-foreground text-[15px]">Guia de Rotina</p><p class="text-sm text-muted-foreground">Passo a passo para reestruturar seu dia</p></div>
+            <span class="ml-auto text-gold/50">✓</span>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-border/40 bg-background/30 hover:border-gold/20 transition-all duration-300">
+            <div><p class="font-semibold text-foreground text-[15px]">Check List</p><p class="text-sm text-muted-foreground">Acompanhe seu progresso diário</p></div>
+            <span class="ml-auto text-gold/50">✓</span>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-border/40 bg-background/30 hover:border-gold/20 transition-all duration-300">
+            <div><p class="font-semibold text-foreground text-[15px]">Planner</p><p class="text-sm text-muted-foreground">Registro guiado das suas emoções</p></div>
+            <span class="ml-auto text-gold/50">✓</span>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-10"></div>
+        <div class="text-center">
+          <p class="text-muted-foreground text-sm mb-2 tracking-wide uppercase">Valor do kit completo</p>
+          <div class="flex items-baseline justify-center gap-3 mb-2">
+            <span class="text-muted-foreground line-through text-xl">R$ 213,40</span>
+          </div>
+          <div class="flex items-baseline justify-center gap-2 mb-1">
+            <span class="text-gold font-heading text-6xl sm:text-7xl font-bold">R$ 77</span>
+            <span class="text-gold/80 text-2xl font-semibold">90</span>
+          </div>
+          <p class="text-muted-foreground text-sm mb-8">Pagamento único • Acesso imediato a todos os materiais</p>
+          <button class="w-full sm:w-auto bg-gold hover:bg-gold-light text-purple-deep font-bold text-lg px-14 py-5 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-gold/20 shadow-[0_0_32px_8px_rgba(120,60,200,0.35)]">Quero o Pacote Completo</button>
+          <div class="flex flex-wrap gap-6 mt-6 justify-center text-muted-foreground text-sm">
+            <div class="flex items-center gap-2">🛡️ Garantia de 7 dias</div>
+            <div class="flex items-center gap-2">⚡ Acesso imediato</div>
+            <div class="flex items-center gap-2">⏱️ Sem mensalidades</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="relative py-20 overflow-hidden">
+  <div class="relative z-10 max-w-3xl mx-auto px-6">
+    <div class="text-center p-10 sm:p-14 rounded-3xl border border-gold/20 bg-card/20">
+      <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 text-gold text-3xl">🛡️</div>
+      <h3 class="font-heading text-2xl sm:text-3xl font-bold mb-4">Garantia Incondicional de <span class="text-gold">7 Dias</span></h3>
+      <p class="text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">Se por qualquer motivo você sentir que o ebook não é para você, basta enviar um e-mail nos primeiros 7 dias e devolveremos 100% do seu investimento. Sem perguntas, sem burocracia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="relative py-16 border-t border-border/30">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="text-center sm:text-left">
+        <h3 class="font-heading text-xl font-bold"><span class="text-gold">Mente</span> Regenerada</h3>
+        <p class="text-muted-foreground text-sm mt-1">Seu guia para recuperar a energia mental.</p>
+      </div>
+      <div class="text-center sm:text-right">
+        <p class="text-muted-foreground text-sm">© 2026 Mente Regenerada. Todos os direitos reservados.</p>
+        <p class="text-muted-foreground/60 text-xs mt-1">Este produto não substitui acompanhamento médico ou psicológico.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const chapters = [
+    { title: "O que é Exaustão Mental?", desc: "Entenda o que realmente acontece no seu cérebro quando a exaustão se instala — e por que simplesmente 'descansar' não é suficiente." },
+    { title: "As Raízes do Esgotamento", desc: "Identifique as causas profundas que levam ao esgotamento mental antes mesmo de você perceber os sintomas." },
+    { title: "O Ciclo da Restauração", desc: "Descubra como o cérebro se recupera naturalmente e como acelerar esse processo de forma saudável." },
+    { title: "Técnicas de Recarga Mental", desc: "Ferramentas práticas de mindfulness e regeneração cognitiva para aplicar no seu dia a dia." },
+    { title: "Redesenhando Sua Rotina", desc: "Aprenda a reorganizar seus hábitos diários para proteger sua energia mental a longo prazo." },
+    { title: "A Mente Regenerada", desc: "Consolide as mudanças e construa uma relação sustentável com o descanso e a produtividade." },
+  ];
+
+  const list = document.getElementById('accordion-list');
+  const numEl = document.getElementById('detail-num');
+  const titleEl = document.getElementById('detail-title');
+  const descEl = document.getElementById('detail-desc');
+  const chapnumEl = document.getElementById('detail-chapnum');
+
+  function renderList(activeIndex) {
+    list.innerHTML = '';
+    chapters.forEach((ch, i) => {
+      const btn = document.createElement('button');
+      btn.className = `w-full text-left p-4 rounded-xl transition-all duration-300 flex items-center gap-4 accordion-item ${i === activeIndex ? 'active border border-gold/30' : 'border border-transparent hover:border-border/50 hover:bg-card/30'}`;
+      btn.innerHTML = `
+        <span class="text-2xl font-heading font-bold ${i === activeIndex ? 'text-gold' : 'text-muted-foreground/40'}">${String(i+1).padStart(2,'0')}</span>
+        <span class="font-medium text-[15px] flex-1 ${i === activeIndex ? 'text-foreground' : 'text-muted-foreground'}">${ch.title}</span>
+      `;
+      btn.addEventListener('click', () => {
+        numEl.textContent = String(i+1).padStart(2,'0');
+        titleEl.textContent = ch.title;
+        descEl.textContent = ch.desc;
+        chapnumEl.textContent = i+1;
+        renderList(i);
+      });
+      list.appendChild(btn);
+    });
+  }
+  renderList(0);
+</script>
+
+</body>
+</html>
